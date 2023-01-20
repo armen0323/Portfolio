@@ -54,7 +54,7 @@ function Work(){
                                       {languages[index % languages.length]}
                                    </TextTransition>
                         </h2>
-                        <p className="P-home-subtitle">Website and user interface designer</p>
+                        <p className="P-home-subtitle">Front-End <Developer></Developer></p>
                         <p className="P-home-text">Hello, I am Armen! A front-end developer from Armavir, Armenia. Currently working as an independent front-end developer. </p>
 
                     </div>
