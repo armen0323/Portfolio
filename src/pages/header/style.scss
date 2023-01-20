@@ -1,0 +1,298 @@
+@import "../../assets/style/mixin.scss";
+.P-body-hidden{
+  overflow: hidden;
+}
+.P-header-container-all{
+.P-header-top-btn{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #3c4649;
+  opacity: 0.8;
+  width: 45px;
+  height: 45px;
+  //background: rgba(255, 255, 255, 0.04);
+  background-color: #b8b8b8;
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 83%;
+  right: 5%;
+  text-decoration: none;
+  visibility: hidden;
+}
+  .P-home-contact-btn{
+    position: fixed;
+    left: 4%;
+    top: 83%;
+    width: 45px;
+    height: 45px;
+    background-color: #3c4649;
+    border-radius: 29px;
+    cursor: pointer;
+    align-items: center;
+    z-index: 99999999999;
+    display: flex;
+    padding: 11px;
+    text-decoration: none;
+    box-shadow: 5px 8px 21px 1px rgba(0,0,0,0.68);
+    @include screen-max-width-991{
+       background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(7.1px);
+      -webkit-backdrop-filter: blur(7.1px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    }
+
+    &:hover{
+      width: 165px;
+      transition: 0.3s;
+      justify-content: space-between;
+      box-shadow: 5px 8px 21px 1px rgba(0,0,0,0.68);
+//border: 1px solid #b8b8b8;
+
+      .P-home-contact-icon{
+        font-size: 20px;
+        visibility: visible;
+        color: #b8b8b8;
+        transition: 0.3s;
+
+
+      }
+
+    }
+    .P-massage-icon{
+      font-size: 23px;
+      color: #b8b8b8;
+      @include screen-max-width-991{
+        color: gray;
+
+      }
+    }
+    .P-home-contact-icon{
+      font-size: 1px;
+      color: snow;
+      visibility: hidden;
+    }
+  }
+  .P-header-block{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 2px 60px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    z-index: 9999;
+
+    .P-header-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .P-header-Logos{
+        display: flex;
+        align-items: center;
+
+
+        .P-header-logo{
+          width: 80px;
+          height: 80px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .active{
+          .P-header-logo{
+            filter: invert(80%);
+          }
+        }
+
+      }
+      .P-header-media-block{
+        min-width: 33px;
+        height: 27px;
+        position: absolute;
+        display: none;
+        z-index: 777;
+
+
+
+        @include screen-max-width-991{
+
+         display: block;
+          z-index: 7;
+          left: calc(100% - 90px);
+
+          }
+
+
+        .P-header-media-logo-first{
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background-color: black;
+        }
+        .P-open-up-first{
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          transform: rotate(45deg);
+          left: calc(50% - 15px);
+          top:  calc(50% - 4px);
+          background-color: black;
+          transition: transform 0.3s;
+        }
+        .P-header-media-logo-second{
+          display: block;
+          position: absolute;
+          top: 8px;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background-color: black;
+        }
+        .P-open-up-second{
+          display: none;
+        }
+        .P-header-media-logo-third{
+          display: block;
+          position: absolute;
+          top: 16px;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background-color: black;
+        }
+        .P-open-up-third{
+          display: block;
+          position: absolute;
+          transform: rotate(-45deg);
+          left: calc(50% - 15px);
+          top:  calc(50% - 4px);
+          transition: transform 0.3s;
+          width: 100%;
+          height: 4px;
+          background-color: black;
+        }
+       @include screen-max-width-991{
+          display: block;
+       }
+      }
+      .P-header-list-wrapper {
+        //
+        //border: 1px solid red;
+        background-color: rgba(181, 179, 176, 0.2);
+        padding: 15px 15px;
+        letter-spacing: 2px;
+        @include screen-max-width-991 {
+          opacity: 0;
+          transform: translateX(100%);
+          width: 100%;
+          min-height: 100vh;
+          padding-top: 80px;
+          position: fixed;
+          background-color: snow;
+          z-index: 6;
+          transition: 0.3s;
+          top: 0;
+          left: 0;
+        }
+
+        .P-header-Lists {
+          display: flex;
+          list-style-type: none;
+          @include screen-max-width-991 {
+            visibility: hidden;
+            align-items: center;
+            flex-direction: column;
+
+
+
+
+
+          }
+
+          .P-header-list {
+            font-size: 20px;
+            font-weight: 300;
+            cursor: pointer;
+            margin-right: 15px;
+            color: #3c4649;
+            @include screen-max-width-991 {
+              margin-right: 15px;
+              margin-top: 35px;
+
+            }
+
+            a {
+
+              color: #3c4649;
+              text-decoration: none;
+              font-weight: 600;
+
+              &:hover {
+                color: #77654d;
+              }
+
+            }
+
+            .active {
+              color: #77654d;
+            }
+
+          }
+        }
+      }
+
+      .P-open-list{
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+        transition:  0.3s;
+
+.P-header-Lists {
+  visibility: visible;
+  .P-header-list {
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-top: 35px;
+
+    a {
+
+      color: #3c4649;
+      text-decoration: none;
+      font-weight: 600;
+
+      &:hover {
+        color: #77654d;
+      }
+    }
+
+    .active {
+      color: #77654d;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+      }
+    }
+  }
+}

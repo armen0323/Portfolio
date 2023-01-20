@@ -1,0 +1,201 @@
+@import "../../assets/style/mixin.scss";
+.P-about-block{
+  width: 100%;
+  .P-about-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    @include screen-max-width-850{
+      flex-direction: column;
+      align-items: center;
+    }
+    .P-about-left{
+      width: 49%;
+      padding: 20px;
+      @include screen-max-width-850{
+        width: 80%;
+      }
+      @include screen-max-width-767{
+        width: 100%;
+        padding: 5px;
+
+      }
+.P-about-left-title{
+  font-size: 55px;
+  color: #545353;;
+  margin-top: 70px;
+  @include screen-max-width-991{
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  @include screen-max-width-576{
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  @include screen-max-width-380{
+    font-size: 30px;
+    margin-top: 10px;
+  }
+}
+      .P-about-left-text{
+
+        font-size: 23px;
+        color: #545353;
+        margin-top: 25px;
+        line-height: 1.3;
+        @include screen-max-width-991{
+          font-size: 25px;
+          line-height: 1.1;
+        }
+        @include screen-max-width-767{
+          width: 100%;
+
+        }
+        @include screen-max-width-576{
+          font-size: 23px;
+          width: 88%;
+        }
+        @include screen-max-width-380{
+          font-size: 18px;
+          width: 95%;
+        }
+
+      }
+      .P-about-left-text2{
+        font-size: 23px;
+        color: #545353;;
+        margin-top: 25px;
+        line-height: 1.3;
+        @include screen-max-width-991{
+          font-size: 25px;
+          line-height: 1.1;
+        }
+        @include screen-max-width-767{
+          width: 100%;
+
+        }
+        @include screen-max-width-576{
+          font-size: 23px;
+          width: 88%;
+        }
+        @include screen-max-width-380{
+          font-size: 18px;
+          width: 95%;
+        }
+      }
+    }
+    .P-about-right{
+      width: 48%;
+      padding: 20px;
+      @include screen-max-width-850{
+        width: 80%;
+      }
+      @include screen-max-width-767{
+        width: 100%;
+        padding: 5px;
+      }
+      .P-about-right-title{
+        font-size: 55px;
+        text-align: center;
+        color: #3b4b60;
+        margin-top: 70px;
+        @include screen-max-width-991{
+          font-size: 40px;
+          margin-top: 30px;
+        }
+        @include screen-max-width-576{
+          font-size: 35px;
+          margin-top: 20px;
+        }
+        @include screen-max-width-380{
+          font-size: 30px;
+          margin-top: 10px;
+        }
+      }
+      .P-about-right-contact{
+        font-size: 23px;
+        color: #545353;
+        margin-top: 25px;
+        line-height: 1.3;
+        @include screen-max-width-991{
+          font-size: 25px;
+          line-height: 1.1;
+        }
+        @include screen-max-width-767{
+          width: 100%;
+
+        }
+        @include screen-max-width-576{
+          font-size: 23px;
+        }
+        @include screen-max-width-380{
+          font-size: 18px;
+        }
+      }
+      .P-about-right-img{
+        width: 85%;
+        height: 400px;
+        background-color: red;
+        border-radius: 20px;
+       margin: 25px auto 0 auto;
+        background-size: cover;
+       background-position: center;
+        @include screen-max-width-850{
+          height: 440px;
+        }
+        @include screen-max-width-576{
+          height: 300px;
+        }
+        @include screen-max-width-380{
+          height: 200px;
+        }
+.P-about-my-image{
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  &:hover{
+    visibility: hidden;
+    transition: 0.2s;
+  }
+}
+      }
+      .P-about-right-info{
+        font-size: 23px;
+        color: #545353;;
+        margin-top: 25px;
+        line-height: 1.3;
+        @include screen-max-width-991{
+          font-size: 25px;
+          line-height: 1.1;
+        }
+        @include screen-max-width-767{
+          width: 100%;
+
+        }
+        @include screen-max-width-576{
+          font-size: 23px;
+          width: 88%;
+        }
+        @include screen-max-width-380{
+          font-size: 18px;
+          width: 95%;
+        }
+      }
+      .P-about-email{
+     margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #e8e7e7;
+        font-size: 21px;
+        text-decoration: none;
+        cursor: pointer;
+        min-width: 200px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: rgba(61, 72, 75, 0.84);
+      }
+    }
+  }
+}

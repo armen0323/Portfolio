@@ -1,0 +1,35 @@
+.P-my-work-block{
+
+  width: 84%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px auto;
+
+  .P-first-img{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .P-second-img{
+    width: 49.3%;
+    height:300px;
+    margin-top: 20px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right 20% bottom 60%;
+    //background-position: center;
+
+  }
+  .P-third-img{
+    width: 49.3%;
+    height: 300px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 30% bottom 60%;
+  }
+}

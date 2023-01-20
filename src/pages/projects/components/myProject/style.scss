@@ -1,0 +1,350 @@
+@import "../../../../assets/style/mixin.scss";
+
+.P-projects-container-first{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  padding: 20px;
+  @include screen-max-width-767{
+    font-size: 40px;
+    flex-direction: column;
+
+  }
+  .P-zay-shop-img{
+    width: 43%;
+    height: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: right 20% bottom 45%;
+    cursor: pointer;
+    @include screen-max-width-767{
+      width: 80%;
+      margin: 0 auto;
+
+    }
+    @include screen-max-width-767{
+      height: 250px;
+
+    }
+    @include screen-max-width-380{
+      height: 190px;
+
+    }
+
+
+  }
+  .P-zay-shop-container{
+    width: 49%;
+    @include screen-max-width-767{
+      width: 90%;
+      margin: 35px auto 0 auto;
+
+    }
+    .P-zay-shop-title{
+      text-align: center;
+      font-size: 50px;
+      color: #3b4b60;
+      @include screen-max-width-991{
+        font-size: 40px;
+
+      }
+      @include screen-max-width-576{
+        font-size: 35px;
+
+      }
+      @include screen-max-width-380{
+        font-size: 30px;
+
+      }
+    }
+    .P-zay-shop-text{
+      font-size: 27px;
+      color: #545353;
+      letter-spacing: 0.1rem;
+      margin-top: 25px;
+      line-height: 1.2;
+      @include screen-max-width-991{
+        font-size: 25px;
+        line-height: 1.1;
+      }
+      @include screen-max-width-767{
+        width: 100%;
+        margin-top: 20px;
+
+      }
+      @include screen-max-width-576{
+        font-size: 23px;
+        width: 88%;
+      }
+      @include screen-max-width-380{
+        font-size: 18px;
+        width: 95%;
+        margin-top: 15px;
+      }
+    }
+    .P-zay-shop-logos{
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      .P-react-logo{
+        font-size: 33px        }
+      .P-sass-logo{
+        font-size: 33px;
+        margin-left: 20px;
+      }
+    }
+    .P-zay-shop-git{
+      margin-top: 15px;
+      color: #0f141e;;
+      font-size: 23px;
+      @include screen-max-width-991{
+        font-size: 25px;
+        line-height: 1.1;
+      }
+      @include screen-max-width-767{
+        width: 100%;
+
+      }
+      @include screen-max-width-576{
+        font-size: 23px;
+
+      }
+      @include screen-max-width-380{
+        font-size: 18px;
+
+      }
+    }
+    .P-zay-shop-btn{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      border: none;
+
+      border-radius: 27px;
+      margin-top: 12px;
+      background-color: #449fdb;
+      cursor: pointer;
+      .P-zay-shop-btn-text{
+        font-size: 1px;
+        visibility: hidden;
+      }
+      .P-zay-shop-btn-logo{
+        font-size: 33px;
+        color: snow;
+        margin-left: 10px;
+      }
+      &:hover{
+        width: 200px;
+        transition: 0.3s;
+        .P-zay-shop-btn-text{
+          font-size: 20px;
+          visibility: visible;
+          transition: 0.3s;
+          margin-left: 17px;
+          color: snow;
+        }
+      }
+    }
+    .P-zayshop-web{
+      text-align: end;
+
+      font-size: 25px;
+      color: #0f141e;;
+      margin-top: 10px;
+      @include screen-max-width-991{
+        font-size: 25px;
+        line-height: 1.1;
+      }
+      @include screen-max-width-767{
+        width: 100%;
+
+      }
+      @include screen-max-width-576{
+        font-size: 23px;
+      }
+      @include screen-max-width-380{
+        font-size: 18px;
+
+      }
+    }
+
+  }
+}
+
+.P-projects-container-second{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 70px;
+  padding: 20px;
+  @include screen-max-width-767{
+    font-size: 40px;
+    flex-direction: column;
+
+  }
+  .P-zay-shop-img{
+    width: 43%;
+    height: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: right 20% bottom 45%;
+    cursor: pointer;
+    @include screen-max-width-767{
+      width: 80%;
+      margin: 0 auto;
+
+    }
+    @include screen-max-width-767{
+      height: 250px;
+
+    }
+    @include screen-max-width-380{
+      height: 190px;
+
+    }
+
+
+  }
+  .P-zay-shop-container{
+    width: 49%;
+    @include screen-max-width-767{
+      width: 90%;
+      margin: 35px auto 0 auto;
+
+    }
+    .P-zay-shop-title{
+      text-align: center;
+      font-size: 50px;
+      color: #3b4b60;
+      @include screen-max-width-991{
+        font-size: 40px;
+
+      }
+      @include screen-max-width-576{
+        font-size: 35px;
+
+      }
+      @include screen-max-width-380{
+        font-size: 30px;
+
+      }
+    }
+    .P-zay-shop-text{
+      font-size: 27px;
+      color: #545353;
+      letter-spacing: 0.1rem;
+      margin-top: 25px;
+      line-height: 1.2;
+      @include screen-max-width-991{
+        font-size: 25px;
+        line-height: 1.1;
+      }
+      @include screen-max-width-767{
+        width: 100%;
+        margin-top: 20px;
+
+      }
+      @include screen-max-width-576{
+        font-size: 23px;
+        width: 88%;
+      }
+      @include screen-max-width-380{
+        font-size: 18px;
+        width: 95%;
+        margin-top: 15px;
+      }
+    }
+    .P-zay-shop-logos{
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      .P-react-logo{
+        font-size: 33px        }
+      .P-sass-logo{
+        font-size: 33px;
+        margin-left: 20px;
+      }
+    }
+    .P-zay-shop-git{
+      margin-top: 15px;
+      color: #0f141e;;
+      font-size: 23px;
+      @include screen-max-width-991{
+        font-size: 25px;
+        line-height: 1.1;
+      }
+      @include screen-max-width-767{
+        width: 100%;
+
+      }
+      @include screen-max-width-576{
+        font-size: 23px;
+
+      }
+      @include screen-max-width-380{
+        font-size: 18px;
+
+      }
+    }
+    .P-zay-shop-btn{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      border: none;
+
+      border-radius: 27px;
+      margin-top: 12px;
+      background-color: #449fdb;
+      cursor: pointer;
+      .P-zay-shop-btn-text{
+        font-size: 1px;
+        visibility: hidden;
+      }
+      .P-zay-shop-btn-logo{
+        font-size: 33px;
+        color: snow;
+        margin-left: 10px;
+      }
+      &:hover{
+        width: 200px;
+        transition: 0.3s;
+        .P-zay-shop-btn-text{
+          font-size: 20px;
+          visibility: visible;
+          transition: 0.3s;
+          margin-left: 17px;
+          color: snow;
+        }
+      }
+    }
+    .P-zayshop-web{
+      text-align: end;
+
+      font-size: 25px;
+      color: #0f141e;;
+      margin-top: 10px;
+      @include screen-max-width-991{
+        font-size: 25px;
+        line-height: 1.1;
+      }
+      @include screen-max-width-767{
+        width: 100%;
+
+      }
+      @include screen-max-width-576{
+        font-size: 23px;
+      }
+      @include screen-max-width-380{
+        font-size: 18px;
+
+      }
+    }
+
+  }
+}
