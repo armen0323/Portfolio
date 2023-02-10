@@ -13,28 +13,32 @@ function MyProjects(){
             image: group,
             title: 'Group 404',
             description: 'This is an amazing website that has several separate pages in which a lot of functionality and logic are written in other things, see for yourself.',
-            class: 'P-projects-container-first'
+            class: 'P-projects-container-first',
+            href:''
         },
         {
             id: 2,
             image: booking,
             title: 'Food Hut',
             description: 'Foot Hut is an amazing website  in which there is data validation  written on the input fields, see for yourself.',
-            class: 'P-projects-container-second'
+            class: 'P-projects-container-second',
+            href:'https://food-shop-six.vercel.app/'
         },
         {
             id: 3,
             image: zay,
             title: 'Zay Shop',
             description: 'Zay Shop is an amazing website width a lot of functionality and and data validation in it, see for yourself.',
-            class: 'P-projects-container-first'
+            class: 'P-projects-container-first',
+            href:''
         },
         {
             id: 4,
             image: toDo,
             title: 'Todo-list/Recoil',
             description: 'This is a todo-list width pretty complex functionality by using Recoil, see for yourself.',
-            class: 'P-projects-container-second'
+            class: 'P-projects-container-second',
+            href:''
         }
     ])
 

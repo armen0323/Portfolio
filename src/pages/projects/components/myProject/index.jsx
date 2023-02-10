@@ -7,7 +7,7 @@ function ProjectsComponent(props){
 
     return(
         <div className={item.class}>
-            <div className='P-zay-shop-img' data-aos="fade-right" data-aos-duration="700" style={{backgroundImage:`url('${item.image}')`}}/>
+            <a className='P-zay-shop-img' target='_blank' href={item.href} data-aos="fade-right" data-aos-duration="700" style={{backgroundImage:`url('${item.image}')`}}/>
             <div className="P-zay-shop-container" >
                 <h2 className="P-zay-shop-title" data-aos="fade-left" data-aos-duration="700">{item.title}</h2>
                 <p className="P-zay-shop-text" data-aos="fade-left" data-aos-duration="700">{item.description}</p>
